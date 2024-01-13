@@ -12,8 +12,13 @@ public class Main {
                                             "Nowak",
                                         5000,
                                                     Dzial.IT);
-
+        Kierownik kierownika1 = new Kierownik( "Adam",
+                                            "Kowal",
+                                        5000,
+                                                    Dzial.IT,
+                                      3000);
         pracownika1.wypiszDane();
+        kierownika1.wypiszDane();
 
 
     }
