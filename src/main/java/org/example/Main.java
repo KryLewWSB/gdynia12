@@ -13,9 +13,7 @@ public class Main {
                                         5000,
                                                     Dzial.IT);
 
-        System.out.println( pracownika1.imie + "\n" +
-                            pracownika1.nazwisko + "\n" +
-                            pracownika1.wynagrodzenie);
+        pracownika1.wypiszDane();
 
 
     }

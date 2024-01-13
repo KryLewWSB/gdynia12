@@ -1,6 +1,6 @@
 package org.example;
 
-public class Pracownik {
+public class Pracownik implements WypiszPersonalia {
     public String imie;
     public String nazwisko;
     public Integer wynagrodzenie;
@@ -10,5 +10,15 @@ public class Pracownik {
         this.nazwisko = nazwisko;
         this.wynagrodzenie = wynagrodzenie;
         this.dzial = dzial;
+    }
+
+    @Override
+    public void wypiszDane() {
+        System.out.println( "-------------------------------------\n" +
+                            "Imię pracownika: " + this.imie + "\n" +
+                            "Nazwisko pracownika: " + this.nazwisko + "\n" +
+                            "Wynagrodzenie pracownika: " + this.wynagrodzenie + "\n" +
+                            "Dział pracownika: " + this.dzial +
+                            "\n-------------------------------------");
     }
 }
